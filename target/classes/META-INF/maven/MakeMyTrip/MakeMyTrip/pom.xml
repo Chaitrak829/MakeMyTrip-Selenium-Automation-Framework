@@ -41,6 +41,27 @@
             <artifactId>commons-io</artifactId>
             <version>2.15.1</version>
         </dependency>
+        
+        <!-- Rest Assured -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.4.0</version>
+</dependency>
+
+<!-- JSON Path -->
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>json-path</artifactId>
+    <version>5.4.0</version>
+</dependency>
+
+<!-- TestNG (already there, keep it) -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.9.0</version>
+</dependency>
 
     </dependencies>
 

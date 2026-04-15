@@ -12,8 +12,7 @@ public class ScreenshotUtil {
 	public static String captureScreenshot(WebDriver driver, String name) {
 
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String path = "screenshots/" + name + ".png";
-
+        String path = "screenshots/" + name + "_" + System.currentTimeMillis() + ".png";
         try {
             FileUtils.copyFile(src, new File(path));
         } catch (Exception e) {
@@ -24,3 +23,4 @@ public class ScreenshotUtil {
 
 }
 }
+	

@@ -38,5 +38,22 @@ public class HotelsPage {
 
         return hotelNames;
     }
+    
+    //API code
+    
+    public boolean verifyHotelPresent(String hotelName)
+    {
+    	List<WebElement> hotels = driver.findElements(By.xpath("//span[contains(@class,'latoBlack')]"));
+    	
+    	for(WebElement hotel : hotels)
+    	{
+    		if(hotel.getText().toLowerCase().contains(hotelName.toLowerCase()))
+    		{
+    			return true;
+    		}
+    	}
+    	
+    	return false;
+    }
 
 }

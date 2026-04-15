@@ -26,5 +26,7 @@ public class HotelsTest extends BaseTest{
 	    for (String hotel : hotels) {
 	        System.out.println(hotel);
 	    }
+	    
+	    System.out.println("Thread ID: " + Thread.currentThread().getId());
 	}
 }
